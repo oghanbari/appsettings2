@@ -2,7 +2,7 @@
 var argscheck = require('cordova/argscheck'),
   exec = require('cordova/exec');
 
-function AppSettings () {
+function AppSettings2 () {
 
 }
 /**
@@ -12,14 +12,14 @@ function AppSettings () {
  * @param {Function} successCallback The function to call when the value is available
  * @param {Function} errorCallback The function to call when value is unavailable
  */
-AppSettings.prototype.get = function (keyArray, successCallback, errorCallback) {
+AppSettings2.prototype.get2 = function (keyArray, successCallback, errorCallback) {
     try {
-        argscheck.checkArgs('AFF', 'AppSettings.get', arguments);
+        argscheck.checkArgs('AFF', 'AppSettings2.get2', arguments);
     } catch (exception) {
-        argscheck.checkArgs('AF', 'AppSettings.get', arguments);
+        argscheck.checkArgs('AF', 'AppSettings2.get2', arguments);
     }
 
-    exec(successCallback, errorCallback, "AppSettings", "get", keyArray);
+    exec(successCallback, errorCallback, "AppSettings2", "get2", keyArray);
 };
 
-module.exports = new AppSettings();
+module.exports = new AppSettings2();
