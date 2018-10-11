@@ -10,13 +10,13 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class AppSettings2 extends CordovaPlugin {
+public class AppSettings extends CordovaPlugin {
 
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
     	JSONObject options = new JSONObject();
-        if (action.equals("get2")) {
+        if (action.equals("get")) {
         	try{
                 CordovaPreferences preferences = webView.getPreferences();
                 for(int i=0;i<args.length();i++){

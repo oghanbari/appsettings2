@@ -17,8 +17,8 @@
      <engine name="cordova" version=">=5.0.0" />
    </engines>
     
-    <js-module src="www/appsettings.js" name="AppSettings2" >
-      <clobbers target="navigator.AppSettings2" />
+    <js-module src="www/appsettings.js" name="AppSettings" >
+      <clobbers target="navigator.AppSettings" />
     </js-module>
 
   <!-- android -->
