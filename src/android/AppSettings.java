@@ -15,9 +15,9 @@ public class AppSettings extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-    	JSONObject options = new JSONObject();
+    	//JSONObject options = new JSONObject();
         if (action.equals("get")) {
-        	try{
+        	/*try{
                 CordovaPreferences preferences = webView.getPreferences();
                 for(int i=0;i<args.length();i++){
         	        String key=args.getString(i);
@@ -29,7 +29,7 @@ public class AppSettings extends CordovaPlugin {
                 callbackContext.success(options);
         	} catch (Exception ex) {
             	callbackContext.error(0);
-            }
+            }*/
             return true;
         }
         return false;
