@@ -1,7 +1,5 @@
-compileJava {
-	//raise heap
-	options.fork = "true"
-	options.forkOptions.with {
-		memoryMaximumSize = "2048m"
-	}
+android {
+ dexOptions {
+    javaMaxHeapSize "4g"
+  }
 }
